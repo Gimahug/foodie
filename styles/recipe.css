@@ -4,12 +4,13 @@ html{
 }
 body{
     box-sizing: border-box;
-    margin: 0 ;
+    margin: 0;
     width: 100%;
     
     color: rgb(122, 121, 121);
 
 }
+
 .fixed-header{
     box-sizing: border-box;
 
@@ -35,6 +36,7 @@ header{
 h1{
     text-align: center;
     letter-spacing: 0.2rem;
+    
 }
 h1 a{
     color: rgb(122, 121, 121);
@@ -79,6 +81,7 @@ nav{
     width: 25%;
 
 }
+
 .menu{
     box-sizing: border-box;
     padding-left: 0;
@@ -96,40 +99,91 @@ nav{
 
 main{
     box-sizing: border-box;
+
     padding-left: 25%;
     padding-top: 86.48px;
     padding-right: 30px;
 
 }
 
+article{
+    margin-left: 10%;
+    margin-right: 25%;
+}
 
-li a{
+
+.picture h2{
+    text-align: center;
+    
+}
+
+.picture h2 span{
+    display: inline-block;
+    background-color:rgb(143, 29, 14);
+    font-size: 0.7rem;
+    color: white;
+}
+.photo{
+    max-width: 100%;
+    object-fit: cover;
+}
+.ingredients, .pre, .step,form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    
+}
+
+.intro{
+    color: black;
+    font-weight: bolder;
+}
+
+form label{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+.submit{
+    margin-top: 15px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+li a, .title a{
     color: black;
     text-decoration: none;
 }
+
 li a:hover{
     color: rgb(143, 29, 14);
 }
 
-.sign-up a{
+.title a:hover{
     color: rgb(143, 29, 14);
-    text-decoration: none;
 }
-
-.sign-up a:hover{
-    text-decoration: underline;
-}
-.sign-up a:focus{
-    text-decoration: underline;
-}
-
-
 
 footer{
     box-sizing: border-box;
     width: 100%;
-    margin-left: 30%;
-    margin-top: 150px;
-    
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+   
     font-size: small;
 }
