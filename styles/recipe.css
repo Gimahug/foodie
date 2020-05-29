@@ -110,12 +110,10 @@ article{
     margin-left: 10%;
     margin-right: 25%;
 }
-
-
-.picture h2{
+.picture{
     text-align: center;
-    
 }
+
 
 .picture h2 span{
     display: inline-block;
@@ -126,6 +124,7 @@ article{
 .photo{
     max-width: 100%;
     object-fit: cover;
+    
 }
 .ingredients, .pre, .step,form{
     margin-top: 30px;
