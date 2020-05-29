@@ -35,6 +35,11 @@ header{
 h1{
     text-align: center;
     letter-spacing: 0.2rem;
+    
+}
+h1 a{
+    color: rgb(122, 121, 121);
+    text-decoration: none;
 }
 nav{
     box-sizing: border-box;
