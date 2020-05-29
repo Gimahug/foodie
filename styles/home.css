@@ -274,12 +274,16 @@ article{
 
 }
 
-li a{
+li a, .title a{
     color: black;
     text-decoration: none;
 }
 
 li a:hover{
+    color: rgb(143, 29, 14);
+}
+
+.title a:hover{
     color: rgb(143, 29, 14);
 }
 
