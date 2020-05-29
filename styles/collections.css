@@ -1,0 +1,171 @@
+html{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+body{
+    box-sizing: border-box;
+    margin: 0 ;
+    width: 100%;
+    
+    color: rgb(122, 121, 121);
+
+}
+.fixed-header{
+    box-sizing: border-box;
+
+    /*上部固定，百分数取代像素：响应式设计*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+
+    display: flex;
+    padding-right: 30px;
+
+    
+}
+
+header{
+    box-sizing: border-box;
+    flex: 1;
+
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    
+}
+h1 a{
+    color: rgb(122, 121, 121);
+    text-decoration: none;
+}
+nav{
+    box-sizing: border-box;
+    flex: 3;
+
+    /*利用flex布局使子元素垂直居中*/
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+ 
+}
+.banner{
+    box-sizing: border-box;
+    padding-left: 0;
+
+    /*取代像素，响应式设计*/
+    width: 100%;
+    text-align: right;
+    
+
+}
+.banner li{
+    box-sizing: border-box;
+    display: inline-block;
+    list-style: none;   
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.fixed-aside{
+    box-sizing: border-box;
+    display: block;
+    position: fixed;
+    top: 88.48px;
+    left: 0;
+    width: 25%;
+
+}
+.menu{
+    box-sizing: border-box;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 50%;
+}
+.menu li{
+    list-style: none;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+}
+main{
+    box-sizing: border-box;
+
+    padding-left: 25%;
+    padding-top: 86.48px;
+    padding-right: 30px;
+
+}
+
+article{  
+    box-sizing: border-box;
+
+    /*创建等宽两列网格*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+
+
+    
+}
+
+.col{
+    box-sizing: border-box;
+    margin-bottom: 75px; 
+        
+    text-align: center;
+}
+
+.left{
+    grid-column: 1/2;
+}
+
+.right{
+    grid-column: 2/4;
+}
+.item{
+    margin-bottom: 80px;
+}
+
+.photo{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+li a, .item a{
+    color: black;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(143, 29, 14);
+}
+
+.item a:hover{
+    color: rgb(143, 29, 14);
+}
+
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: small;
+}

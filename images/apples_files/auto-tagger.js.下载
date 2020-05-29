@@ -1,0 +1,34 @@
+
+var atScripts = document.getElementsByTagName('script');
+for (var i=0; i < atScripts.length; i++){
+    var source = new String(atScripts[i].src), atTagID, atLocaleID, atOverWrite, atTagIDObj;
+    if (atTagIDObj = source.match(/auto-tagger.*[&?]tag=([^&]+)/)){	
+        // Get the atTagID from the script
+        atTagID = atTagIDObj[1];
+ 	}  
+    if(atTagIDObj = source.match(/auto-tagger.*[&?]locale=([^&]+)/)){
+ 	    // Got the atLocaleID form the script
+        atLocaleID = atTagIDObj[1];
+    }
+    else{
+        // Setting default LocaleId as US if it could not be retrieved
+	    // from the script
+        atLocaleID = "US";
+    }
+    if(atTagIDObj = source.match(/auto-tagger.*[&?]overwrite=([\d])/)){
+        // Got overwrite form the script
+        atOverWrite = atTagIDObj[1];
+        break;
+    }
+}
+ 
+if(atOverWrite == "1"){
+    atOverWrite = parseInt(atOverWrite);
+}else{
+    atOverWrite = 0;
+}
+
+var oneTagScript = document.createElement('script'),
+scriptSrc = "//z-na.amazon-adsystem.com/widgets/onejs?tag=" + atTagID + "&locale=" + atLocaleID + "&overwrite=" + atOverWrite;
+oneTagScript.setAttribute("src", scriptSrc);
+if(document.body != null) document.body.appendChild(oneTagScript);
