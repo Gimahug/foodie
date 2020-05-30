@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>FOOdie</title>
         <link rel="stylesheet" href="../styles/recipe.css">
-        <script></script>
+        <link rel="stylesheet" href="../styles/search.css">
     </head>
 
     <body>
@@ -16,7 +16,12 @@
             <nav>
                 <ul class="banner">
                     <li><a href="../sign_in.html">LOG IN</a></li>
-                    <li><a href="">SEARCH</a></li>
+                    <li><button class="search">SEARCH</button></li>
+                    <li>
+                        <form class="searchBox">
+                            <input type="search" class="inputSearch" placeholder="Find a recipe...">
+                        </form>
+                    </li>
                 </ul>
 
             </nav>
@@ -26,7 +31,7 @@
             <aside>
                 <ul class="menu">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="">COLLECTIONS</a></li>
+                    <li><a href="../collections.html">COLLECTIONS</a></li>
                     <li><a href="">FEATURED</a></li>
                     <li><a href="">EXPLORE</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -87,6 +92,8 @@
                 <p>©FOOdie 2020</p>
             </footer>
         </main>
+
+        <script src="../scripts/search.js"></script>
         
     </body>
 </html>

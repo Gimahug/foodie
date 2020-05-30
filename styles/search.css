@@ -10,6 +10,7 @@
 
 .searchBox{
     display: none;
+    margin: 0;
 }
 input[type="search"]{
     border: 0;
