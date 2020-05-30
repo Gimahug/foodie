@@ -104,37 +104,61 @@ main{
 
 }
 
-article{  
+.container{  
+    
     box-sizing: border-box;
-
-    /*创建等宽两列网格*/
+    background: #f8f8f8;
+    /*创建两列grid布局*/
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 30px;
-
-
+    grid-gap: 50px;
+   
+    padding: 50px;
     
+ 
 }
 
-.col{
-    box-sizing: border-box;
-    margin-bottom: 75px; 
-        
+.collections{
+
+    background: white;
+    padding: 0;
+}
+
+.tag {
+    font-size: 0.7rem;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    
+    margin-left: 0;
+    letter-spacing: 0.1rem;
+   
+}
+
+.title {
     text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding:0;
+    color: black;
+    letter-spacing: 0.05rem;
 }
 
-.left{
-    grid-column: 1/2;
+
+.collections a{
+    text-decoration: none;
+    display: block;
 }
 
-.right{
-    grid-column: 2/4;
-}
-.item{
-    margin-bottom: 80px;
+
+
+.collections a:hover{
+    color: rgb(143, 29, 14);
 }
 
-.photo{
+
+.collections img{
     max-width: 100%;
     object-fit: cover;
 }
@@ -147,7 +171,7 @@ article{
 
 
 
-li a, .item a{
+li a{
     color: black;
     text-decoration: none;
 }
@@ -156,9 +180,7 @@ li a:hover{
     color: rgb(143, 29, 14);
 }
 
-.item a:hover{
-    color: rgb(143, 29, 14);
-}
+
 
 
 footer{
