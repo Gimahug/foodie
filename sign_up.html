@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>FOOdie</title>
         <link rel="stylesheet" href="styles/sign_up.css">
-        <script></script>
+        <link rel="stylesheet" href="styles/search.css">
     </head>
 
     <body>
@@ -16,7 +16,12 @@
             <nav>
                 <ul class="banner">
                     <li><a href="sign_in.html">LOG IN</a></li>
-                    <li><a href="">SEARCH</a></li>
+                    <li><button class="search">SEARCH</button></li>
+                    <li>
+                        <form class="searchBox">
+                            <input type="search" class="inputSearch" placeholder="Find a recipe...">
+                        </form>
+                    </li>
                 </ul>
 
             </nav>
@@ -35,7 +40,7 @@
         </div>
 
         <main>
-            <form class="sign-in">
+            <form class="sign-up">
                 <div class="title">CREATE AN ACCOUNT</div>
                 <div class="user_name">
                     <label for="user_name">Username*</label>
@@ -53,7 +58,7 @@
                     <button type="submit"> SUBMIT </button>
                 </div>
 
-                <div class="sign-up"> Have an account ? <a href="sign_in.html">Log in </a> now.</div>
+                <div class="sign-in"> Have an account ? <a href="sign_in.html">Log in </a> now.</div>
                
             </form>
 
@@ -61,6 +66,8 @@
                 <p>©FOOdie 2020</p>
             </footer>
         </main>
+
+        <script src="scripts/search.js"></script>
         
     </body>
 </html>

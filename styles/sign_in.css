@@ -128,14 +128,14 @@ main{
     text-align: center;
 }
 
-label{
+.sign-in label{
     display: block;  
     text-align: left;
     margin-right: 10px;
     margin-bottom: 15px;
 
 }
-input{ 
+.sign-in input{ 
     height: 2.5rem;
     width: 100%;
     margin: 0;
@@ -143,14 +143,14 @@ input{
     border-radius: 5px;
     box-sizing: border-box;
 }
-input:focus{
+.sign-in input:focus{
     border: 2px solid rgb(119, 118, 118);
     
     outline:none;
     vertical-align: middle;
 }
 
-button{
+.sign-in button{
     height: 2.5rem;
     border-radius: 5px;
     margin-top: 20px;
@@ -159,14 +159,19 @@ button{
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
 }
-button:hover{
+.sign-in button:hover{
     background:rgba(95, 92, 92, 0.3);
     border: 0.5px solid rgb(100, 98, 98);
  }
 
-button:focus{
+ .sign-in button:focus{
     border: 0.5px solid rgb(100, 98, 98);
 }
+
+
+
+
+
 
 
 

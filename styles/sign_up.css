@@ -102,12 +102,12 @@ main{
 
 }
 
-.sign-in{
+.sign-up{
     width: 350px;
     margin-top: 10%;  
     margin-left: 20%;
 }
-.sign-in .title{
+.sign-up .title{
     margin-bottom: 30px;
     width: 100%;
     font-size: 1.5em;
@@ -115,7 +115,7 @@ main{
     letter-spacing: 0.1rem;
     word-spacing: 0.3rem;
 }
-.sign-up{
+.sign-in{
     width: 100%;
     text-align: center;
     font-size: 0.8rem;
@@ -128,14 +128,14 @@ main{
     text-align: center;
 }
 
-label{
+.sign-up label{
     display: block;  
     text-align: left;
     margin-right: 10px;
     margin-bottom: 15px;
 
 }
-input{ 
+.sign-up input{ 
     height: 2.5rem;
     width: 100%;
     margin: 0;
@@ -143,14 +143,14 @@ input{
     border-radius: 5px;
     box-sizing: border-box;
 }
-input:focus{
+.sign-up input:focus{
     border: 2px solid rgb(119, 118, 118);
     
     outline:none;
     vertical-align: middle;
 }
 
-button{
+.sign-up button{
     height: 2.5rem;
     border-radius: 5px;
     margin-top: 20px;
@@ -159,12 +159,12 @@ button{
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
 }
-button:hover{
+.sign-up button:hover{
     background:rgba(95, 92, 92, 0.3);
     border: 0.5px solid rgb(100, 98, 98);
  }
 
-button:focus{
+ .sign-up button:focus{
     border: 0.5px solid rgb(100, 98, 98);
 }
 
@@ -179,15 +179,15 @@ li a:hover{
     color: rgb(143, 29, 14);
 }
 
-.sign-up a{
+.sign-in a{
     color: rgb(143, 29, 14);
     text-decoration: none;
 }
 
-.sign-up a:hover{
+.sign-in a:hover{
     text-decoration: underline;
 }
-.sign-up a:focus{
+.sign-in a:focus{
     text-decoration: underline;
 }
 
